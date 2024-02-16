@@ -3,16 +3,19 @@ plugins {
 }
 
 android {
+    namespace 'com.college.converter'
+
     compileSdk 34
 
     defaultConfig {
         applicationId "com.college.converter"
-        minSdk 27
+        minSdk 22
         targetSdk 34
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -22,10 +25,9 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility =JavaVersion.VERSION_1_8
+        targetCompatibility= JavaVersion.VERSION_1_8
     }
-    namespace 'com.college.converter'
 }
 
 dependencies {
